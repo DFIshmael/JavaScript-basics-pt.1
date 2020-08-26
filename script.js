@@ -30,5 +30,11 @@ isMarrried = false; // boolean
 console.log(isMarrried,job);
 console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarrried); // correct spacing
 
+//variable value updates as you redeclare them
+job = 'driver';
+age = 'twenty eight';
+firstName = 'Nate';
+
+alert(firstName+' is a '+age+' year old '+job); //POP up window in Browser. Not printed in console
 
 
