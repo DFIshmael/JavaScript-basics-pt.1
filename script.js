@@ -153,12 +153,11 @@ jHeight = 1.7272;
 
 //BMI calculation = mass /Height^2 which means -- mass / (height * Height)   
 
-var mBmi = 90.7185 / (1.8288 * 1.8288);
+var mBmi = mMass / (mHeight * mHeight);
 console.log(mBmi);// EQUALS 27.12460575
 
-var jBmi = 68.0389 /(1.7272^2);
-console.log(jBmi);// EQUALS 22.67963333333333
-
+var jBmi = jMass /(jHeight * jHeight);
+console.log(jBmi);// EQUALS 22.80720283
 var isBmi = mBmi >= jBmi;
 console.log(isBmi); // TRUE
 
