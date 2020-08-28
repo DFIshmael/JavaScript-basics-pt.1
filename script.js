@@ -142,7 +142,8 @@ console.log(x); //EQUALS 55
 // x-- ; EQUALS 54
 
 
-//CODING Challenge #1
+
+//CODING ChALLENGE #1
 
 var mMass, mHeight, jMass, jHeight;
 mMass = 90.7185;
@@ -164,6 +165,6 @@ console.log(isBmi); // TRUE
 var mBmi = 'taller than John';
 var jBmi = 'shorter than Mark';
 
-console.log('Now we know that Mark is '+ mBmi+'.');
+console.log('Now we know that Mark is '+ mBmi+', '+'and that John is '+jBmi+'.');
 
 // I DID MY FIRST CODE CHALLENEGE
