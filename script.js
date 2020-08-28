@@ -128,9 +128,42 @@ console.log(x,y); ///EQUAL 26 26
 // console.log(x); // 52 is answer
 
 //Rewrite x = x * 2;
-x *= 2;
+x *= 2; 
 console.log(x); //EQUALS 52
 
 //Works for all operators
-x += 2;
+//Rewrite x = x + 2;
+x += 2; 
 console.log(x); // EQUALS 54
+
+// EVEN SHORTER WAY. to only add 1.
+x++;
+console.log(x); //EQUALS 55
+// x-- ; EQUALS 54
+
+
+//CODING Challenge #1
+
+var mMass, mHeight, jMass, jHeight;
+mMass = 90.7185;
+mHeight = 1.8288;
+jMass = 68.0389;
+jHeight = 1.7272;
+
+//BMI calculation = mass /Height^2 which means -- mass / (height * Height)   
+
+var mBmi = 90.7185 / (1.8288 * 1.8288);
+console.log(mBmi);// EQUALS 27.12460575
+
+var jBmi = 68.0389 /(1.7272^2);
+console.log(jBmi);// EQUALS 22.67963333333333
+
+var isBmi = mBmi >= jBmi;
+console.log(isBmi); // TRUE
+
+var mBmi = 'taller than John';
+var jBmi = 'shorter than Mark';
+
+console.log('Now we know that Mark is '+ mBmi+'.');
+
+// I DID MY FIRST CODE CHALLENEGE
