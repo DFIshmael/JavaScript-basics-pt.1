@@ -66,3 +66,23 @@ clearWater = true;
 
 console.log('Is '+girlCoder+' a bad '+'coder? '+badCoder);
 console.log('Can '+girlCoder+' walk through water ?'+clearWater);
+
+//Basic Operators
+var birthJohn = 2020 - 28; //subraction in Browser. JS does the math for you.
+console.log(birthJohn);
+
+//var shortcuts
+ var birthJohn,birthDerelle, birth;
+ birthJohn = 1992;
+ birthDerelle = 1990;
+ birth = 2000;
+
+ console.log(birthDerelle + 10); //addition/multiplication etc
+
+ //My own operator examples
+ var ageJohn,ageDerelle,ageBrad;
+ ageJohn = 10;
+ ageDerelle = 20;
+ ageBrad = 30;
+
+ console.log(ageDerelle > ageJohn); // Boolean answer in Browser = True.
