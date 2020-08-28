@@ -158,12 +158,13 @@ console.log(mBmi);// EQUALS 27.12460575
 
 var jBmi = jMass /(jHeight * jHeight);
 console.log(jBmi);// EQUALS 22.80720283
+
 var isBmi = mBmi >= jBmi;
 console.log(isBmi); // TRUE
 
 var mBmi = 'taller than John';
 var jBmi = 'shorter than Mark';
 
-console.log('Now we know that Mark is '+ mBmi+', '+'and that John is '+jBmi+'.');
+console.log('Now we know that Mark is '+ mBmi+', '+'and that John is '+jBmi+'.'+' Do you agree ? '+isBmi);
 
 // I DID MY FIRST CODE CHALLENEGE
