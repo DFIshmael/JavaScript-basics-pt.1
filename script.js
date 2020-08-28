@@ -86,3 +86,51 @@ console.log(birthJohn);
  ageBrad = 30;
 
  console.log(ageDerelle > ageJohn); // Boolean answer in Browser = True.
+
+ //---------------------------------
+ //Operator precedence section
+ //order of JS operator
+ //1. Grouping()
+ //2.Exponent
+ //3.Multiply*
+ //4.Divide/
+ //5.Remainder%
+ //6.Add+
+ //7.Sub-
+ //8.Less than <
+ //9.Less than or equal to <=
+//10.Greater than >
+//11.Greater than or equal to >=
+
+//EXAMPLE of order in equation
+// (3 + 5) * 4 - 6; // 8 * 4 - 6 EQUALS 26
+
+//EXAMPLE with VARs
+var now = 2020;
+var yearDerelle = 1990;
+var fullAge = 30;
+var isfullAge = now - yearDerelle >= isfullAge; // (isfullAge) is VAR seperate from VAR (fullAge)
+console.log(isfullAge);
+
+var ageDerelle = now - yearDerelle;
+var ageJay = 40;
+var average = (ageJay + ageDerelle)/ 2;
+console.log(average);
+
+//multiple assignments
+ var x, y;
+ x = y = (3+5) * 4 - 6;
+ //BOTH variables x and y will equal 26
+console.log(x,y); ///EQUAL 26 26
+
+//Operator shortcuts
+// x = x * 2; // 26 from previous equation * 2  EQUALs 52
+// console.log(x); // 52 is answer
+
+//Rewrite x = x * 2;
+x *= 2;
+console.log(x); //EQUALS 52
+
+//Works for all operators
+x += 2;
+console.log(x); // EQUALS 54
