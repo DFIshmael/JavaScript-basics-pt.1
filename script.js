@@ -286,15 +286,30 @@ switch (job){
 
  // console = John is a teenage!
 
-
-
-
-
-
-
   }
 
+//   Practice Switch
+ var myName = 'Derelle';
+ var myAge = 30;
 
+ switch(true){
+     case age >= 25 || age <= 30:
+         console.log(myName+ ' not quite!');
+          break;
+    case age < 29:
+         console.log(myName+' that/s right!');
+        break;
+    case age <= 29 && age >= 25:
+        break;
+        default:
+            console.log(myName+' keep coding!');
+    
+
+
+
+
+
+ }
 
 
 
