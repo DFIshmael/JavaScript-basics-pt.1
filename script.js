@@ -167,4 +167,65 @@ var jBmi = 'shorter than Mark';
 
 console.log('Now we know that Mark is '+ mBmi+', '+'and that John is '+jBmi+'.'+' Do you agree ? '+isBmi);
 
+if(mBmi < jBmi){
+    console.log('John, you are bigger!');
+}else{
+    console.log('You wish!');
+}
+
 // I DID MY FIRST CODE CHALLENEGE
+
+
+//Decisions with conditionals with IF/ELSE
+var firtName = 'Jay';
+var marryStatus = 'single';
+
+//  this statment determines booleen True/False.
+if (marryStatus === 'married'){
+    console.log(firstName+' is married !');
+// console wont return anything if VAR and IF statement don't MATCH here.
+} else{
+    console.log(firstName+ ' will hopefully get married soon!');
+}
+
+var isMarried = true;
+if (isMarried){
+    console.log(firstName+' is married!');
+}else{
+    console.log(firstName+' will marry soon!');
+}
+
+//Boolean LOGIC
+//AND (&&) - Both VAR must be TRUE for expression to be true
+
+//OR (||) - ATLEAST one VAR must be true to make expression true. Only FALSE if BOTH VAR are false.
+
+//NOT(!) - Iverts TRUE/FALSE value. IF var A is TRUE, then NOT A is false and vice versa.
+
+//examples=
+// var age = 16;
+// age >= 20;  -- false
+
+// age <= 30;  -- true
+
+// !(age < 30);  -- false (! inverted value from true to false)
+
+// age >= 20 && age < 30;  -- false ( both expressions were not true)
+
+// age >= 20 || age < 30;  --true (at least one var is true to make expression true)
+
+//ELSE/IF condtitional
+
+var firsName, age;
+firstName = 'John';
+age = 25;
+
+if (age < 13){
+    console.log(firstName+' is a boy!');
+}else if(age >= 13 && age < 20){
+    console.log(firstName+' is a teenager!');
+} else if ( age <= 20 || age < 30){
+    console.log(firstName+' is a young brother!');
+}else{
+    console.log(firstName+' is a man!');
+}
