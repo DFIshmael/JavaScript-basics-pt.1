@@ -214,7 +214,7 @@ if (isMarried){
 
 // age >= 20 || age < 30;  --true (at least one var is true to make expression true)
 
-//ELSE/IF condtitional
+//ELSE/IF condtitional---
 
 var firsName, age;
 firstName = 'John';
@@ -229,3 +229,73 @@ if (age < 13){
 }else{
     console.log(firstName+' is a man!');
 }
+
+//The Ternary Operator - shortcut for ELse/IF condition
+//example
+
+var firstName = 'John';
+var age = 18; 
+
+age >=21 ?  console.log (firstName+' drinks beer.') //IF
+: console.log(firstName+' drinks juice.'); //ELSE
+// console = John drinks juice.
+
+//Assign value to operator using Ternary operator
+var drink = age >= 18 ? 'beer':'juice';
+console.log(drink);
+
+
+//Switch statement can be used in stead of Else/IF statment//
+var job = 'teacher';
+switch (job){
+    case 'teacher':
+        console.log(firstName+' teaches kids how to code.');
+         break;
+    case 'driver':
+        console.log(firstName+' drives an uber in Brooklyn.');
+         break; 
+    case'designer':
+         console.log(firstName+' designs beautifuls websites');
+         break;
+    default:
+        console.log(firstName+' does something else!');
+      
+// (break;) stop the repition once job if found and line is executed.
+// remeber ':' after case:
+
+}
+
+// THOSE ARE 3 WAYS TO WRITE CONDITIONAL CODE.(ELSE/IF, SWITCH, TERNIARY OPERATR). Switch provides cleaner code.
+
+// Example with numbers
+  var firstName = 'John';
+  var age = 18;
+
+//find the conditional statement that is TRUE
+  switch(true){
+    case age < 13:
+        console.log(firstName+' is a boy!');
+          break;
+    case age >= 13 && age < 20:
+        console.log(firstName+' is a teenager!');
+         break;
+    case age >= 20 && age < 30:
+        break;
+        default:
+            console.log(firstName+' is a man!');
+
+ // console = John is a teenage!
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+  
