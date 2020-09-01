@@ -303,14 +303,90 @@ switch (job){
         break;
         default:
             console.log(myName+' keep coding!');
-    
-
-
-
-
-
  }
 
 
+  //Truthy & Falsey Values
+  //Falsey = "undefined", "Null" , 0 , ' ' , Naan
 
-  
+  //Truthy = anything not false
+
+  var height;
+  height = 0;
+
+  if (height || height === 0) {
+    console.log('Variable is defined!');
+  }else{
+      console.log('Variable is NOT defined!');
+  }
+  //console = variable is defined
+
+
+  //TYPE COERCION for ==
+  //type coercion coverts number to string using ' == ' operator
+  //EXAMPLE
+var height;
+height = 23;
+
+//   if (height == '23' ){
+//       console.log('true');
+//   }else{
+//       console.log('false');
+//   }
+
+//Using ' === ' will mean that the value EQUALS the other.
+//EXAMPLE
+if (height === '23'){
+    console.log(TRUE);
+}else{
+    console.log('Not the same hunny');
+}
+//console = not the same hunny--a string, not a number
+
+
+
+//CODING CHALLENGE #2
+
+
+var johnScore1 = 89;
+var johnScore2 = 120;
+var johnScore3 = 103;
+var johnAverage = (johnScore1 + johnScore2 + johnScore3)/3;
+console.log(johnAverage); //104
+
+
+if(johnAverage){
+    console.log('defined');
+}else{
+    console.log('undefined');
+} //console = defined
+
+var mikeScore1 = 116;
+var mikeScore2 = 94;
+var mikeScore3 = 123;
+var mikeAverage = (mikeScore1 + mikeScore2 + mikeScore3)/3;
+console.log(mikeAverage);//111
+
+if (true) {
+    console.log('Mike has higher average score of '+mikeAverage);
+}else{
+    console.log('John has higher average of '+johnAverage);
+}
+
+mikeAverage > johnAverage ? console.log('Mike/s team shreds!'):
+console.log('John/s team kills!');
+
+
+// OR could have done less code with this 
+
+// var johnScore = (89 + 120 + 103)/3;
+// var mikeScore = (116 + 94 + 123)/3;
+// console.log(johnScore, mikeScore); // prints 104, 111
+
+// if (johnScore > mikeScore) {
+//     console.log('John/s the winner!');
+// }else if (mikeScore > johnScore) {
+//     console.log('Mike/s the winner!');
+// }else{
+//     console.log('It/s a draw!');
+// }
