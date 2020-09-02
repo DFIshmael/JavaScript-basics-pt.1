@@ -345,6 +345,7 @@ if (height === '23'){
 
 
 
+
 //CODING CHALLENGE #2
 
 
@@ -390,3 +391,65 @@ console.log('John/s team kills!');
 // }else{
 //     console.log('It/s a draw!');
 // }
+
+
+
+//FUNCTIONS
+// function = container of code to run and pass arguments through.
+
+// You CALL a function
+
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
+//birthYear = argument
+//calculateAge = variable
+//return = return results from a function
+// you can SAVE results into Var 
+ 
+var ageBrad = calculateAge(1948);
+var ageMike = calculateAge(1950);
+var ageTom = calculateAge(1968);
+console.log(ageMike, ageBrad, ageTom);
+// 68, 70 , 50
+
+// TIP - D.R.Y = don't repeat yourself with code. Use a function
+
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    console.log(firstName+' retires in '+retirement+' years.');
+    
+    if (retirement > 65 ) {
+        console.log(firstName+' retires in '+retirement+' years.');      
+} else{
+    console.log(firstName+' is already retired buddy!');
+}
+}
+// NOW call the function for it to print to console.
+//you declare each argument in ()
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1980, 'Derelle');
+yearsUntilRetirement(2000, 'Jay');
+
+
+
+//Function expression
+// write the function and argument and assign function to a var // var whatDoYouDo = function(job,firstName){
+// }
+
+//NOTE: do not include'break' AFTER case because RETURN finshes the function. do not need to break out.
+var firstName = 'May';
+var whatDoYouDo = function (job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+        case 'driver':
+            return firstName +' drives kids to school';
+        case firstName + ' designer':
+            return firstName +' designes websites';
+        default:
+            return firstName +'  does nada!';
+    }
+}
+console.log(whatDoYouDo('dancer',firstName));
