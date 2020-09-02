@@ -435,6 +435,7 @@ yearsUntilRetirement(2000, 'Jay');
 
 
 //Function expression
+//JS expressions ALWAYS return a VALUE
 // write the function and argument and assign function to a var // var whatDoYouDo = function(job,firstName){
 // }
 
@@ -453,3 +454,37 @@ var whatDoYouDo = function (job, firstName){
     }
 }
 console.log(whatDoYouDo('dancer',firstName));
+
+//-------------------Another example
+
+var howDoYouSay = function (greeting, firstName){
+    switch(greeting){
+        case 'Hola':
+            return firstName+' says hello in spanish';
+        case 'Hello':
+            return firstName+' says hello in english';
+        case 'Bonjour':
+            return firstName+' says hello in french';
+        default:
+            return firstName+' speaks none of these languages!'
+    }
+}
+console.log(howDoYouSay('Bonjour',firstName));
+console.log(howDoYouSay('Hello', 'Jane'));
+//You can swap out the 'firstName'
+
+
+
+//ARRAYS///!!
+// Arrays are a collection of variables that can have a different data type.USES []
+//Arrays are 0 based counting
+// Example of Array
+var names = ['Mike', 'John', 'Kyle']; // COUNT- 0,1,2
+// console.log(names[3]); //prints  UNDEFINED
+console.log(names[2]); //prints  element Kyle
+console.log(names) // prints (3) ["Mike", "John","Kyle"]
+console.log(names.length); //prints 3
+
+//To change elements in ARRAY
+names[1] = 'Ned';
+console.log(names);//prints(3) ["Mike","Ned","Kyle"];
