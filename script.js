@@ -553,3 +553,11 @@ function tipCalculator(bill){
     return percentage * bill;
 }
 console.log(tipCalculator(100)); //run the bill amount to determine tips
+
+// To create an array from tipCalculator
+
+var bills = [124,48,268];
+var tips = [tipCalculator(bills[0]),
+           tipCalculator(bills[1]),
+           tipCalculator(bills[2])];
+           console.log(tips);
