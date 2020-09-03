@@ -432,8 +432,6 @@ yearsUntilRetirement(1990, 'John');
 yearsUntilRetirement(1980, 'Derelle');
 yearsUntilRetirement(2000, 'Jay');
 
-
-
 //Function expression
 //JS expressions ALWAYS return a VALUE
 // write the function and argument and assign function to a var // var whatDoYouDo = function(job,firstName){
@@ -478,13 +476,80 @@ console.log(howDoYouSay('Hello', 'Jane'));
 //ARRAYS///!!
 // Arrays are a collection of variables that can have a different data type.USES []
 //Arrays are 0 based counting
+//Arrays prints the entire amount of elements starting from 1.
 // Example of Array
 var names = ['Mike', 'John', 'Kyle']; // COUNT- 0,1,2
 // console.log(names[3]); //prints  UNDEFINED
+
 console.log(names[2]); //prints  element Kyle
-console.log(names) // prints (3) ["Mike", "John","Kyle"]
-console.log(names.length); //prints 3
+
+console.log(names) // prints (3) ["Mike", "John","Kyle"]  NOTE: the amount of elements in ARRAY
+
+console.log(names.length); //prints 3 - Amount of elements in ARRAY
 
 //To change elements in ARRAY
 names[1] = 'Ned';
-console.log(names);//prints(3) ["Mike","Ned","Kyle"];
+console.log(names);//prints(3) ["Mike","Ned","Kyle"]; //0, 1, 2
+
+//To assign elements in Array
+names[5] = "Mary";
+console.log(names); // prints(6)["Mike","Ned","Kyle", empty x2,"Mary"]
+
+console.log(names[2]); //prints Kyle
+
+names[1] = "Mary";
+console.log(names[1]);
+
+// Array can include difference Data Types
+var ned = ['Jay','Bee',1990, false, 'teacher'];
+
+// to add an element to an Array, use PUSH
+ned.push('black');
+console.log(ned); ///(6)["Jay","Bee",1990,false,"teacher","black"]
+
+console.log(ned[5]);// black
+
+ned[2] = 'fake';
+console.log(ned[2]);
+console.log(ned);//(6)["Jay","Bee","fake",false,"teacher","black"]
+
+// To REMOVE and element from the END. use POP
+ned.pop();//removes "black"
+
+console.log(ned); //(5)["Jay","Bee","fake",false,"teacher"]
+
+ned.pop();
+console.log(ned)////(4)["Jay","Bee","fake",false]
+
+ned.pop()
+console.log(ned);////(3)["Jay","Bee","fake"]
+
+// To see if an element is present in an ARRAY(Case Sensitive!)
+console.log(ned.indexOf('teacher')); //// -1
+
+// if element is not present console will print -1
+
+console.log(ned.indexOf('Jay')); // prints 0
+
+console.log(ned.indexOf('Bee')); // prints 1
+
+// To test expression
+ var firstInLine = ned.indexOf('Bee') === 1? 'Bee is first in line': 'Bee is not first in line';
+ console.log(firstInLine);
+
+//  CODING CHALLENGE
+
+
+
+function tipCalculator(bill){
+    var percentage;
+    if(bill < 50){
+        percentage = .2;
+    }else if (bill >= 50 && bill < 200){
+        percentage = .15;
+    }else{
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+console.log(tipCalculator(100)); //run the bill amount to determine tips
