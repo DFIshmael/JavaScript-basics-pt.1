@@ -560,4 +560,5 @@ var bills = [124,48,268];
 var tips = [tipCalculator(bills[0]),
            tipCalculator(bills[1]),
            tipCalculator(bills[2])];
+
            console.log(tips);
